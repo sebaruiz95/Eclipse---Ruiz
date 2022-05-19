@@ -1,0 +1,331 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    background-color: #22577E;
+}
+
+.contenedor{
+    display: grid;
+    height: 200vh;
+    grid-column: repeat (3, 1fr);
+    grid-template-rows: 0.3fr 0.8fr 0.5fr 0.2fr;
+    grid-template-areas: "header header header "
+                         " main main aside"
+                         "section section2 aside"
+                         "footer footer footer ";
+    gap: 10px;                        
+}
+header{
+    grid-area: header;
+    background-color: #22577E;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 150px;
+}
+
+header h1{
+    font-family: 'EB Garamond', serif;
+    font-weight: 100;
+    color: #FAFFAF;
+    font-size: 50px;
+    align-self: center;
+}
+
+main{
+    background-color: #22577E;
+    grid-area: main;
+}
+
+.maintxt{
+    font-family: 'EB Garamond', serif;
+    color: #FAFFAF;
+    text-align: center;
+    padding: 20px;
+}
+
+aside{
+    background-color: #22577E;
+    grid-area: aside;
+    font-family: 'EB Garamond', serif;
+    color: #FAFFAF;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    align-self: center;
+    margin-top: 50px;
+}
+
+fieldset{
+    height: 500px;
+    border: none;
+    margin-top: 70px;
+    font-size: large;
+}
+
+legend{
+    font-size: xx-large;
+}
+.nombre{
+    margin: 50px;
+}
+.mail{
+    margin: 50px;
+}
+.telefono{
+    margin: 50px;
+}
+.producto{
+    margin: 50px;
+}
+.medidas{
+    margin: 50px;
+}
+form button {
+    padding: 0.5em 1em;
+    border: none;
+    background: #67a29e;
+    cursor: pointer;
+    font-family: 'EB Garamond', serif;
+    color: #FAFFAF;
+    margin-left: 35%;
+  }
+legend{
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+    padding: 10px;
+    font-family: 'EB Garamond', serif;
+    position: sticky;
+    top: 0;
+    background-color: #67a29e;
+}
+
+nav ul li {
+    color: #FAFFAF;
+    font-size: large;
+    display: inline-block;
+    margin-left: 40px;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FAFFAF;
+}
+
+nav ul li:hover{
+    font-weight: bold;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #67a29e;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
+nav ul li:hover > ul{
+    display: block;
+}
+
+section{
+    background-color: #22577E;
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.imgcor{
+    border-radius: 20%;
+    border-style:outset;
+    border-color: #FAFFAF;
+    border-width: 0.1cm;
+    height: 300px;
+    width: 400px;
+}
+
+.ctxt{
+    font-family: 'EB Garamond', serif;
+    color: #FAFFAF;
+    font-size: 30px;
+}
+.section2{
+    background-color: #22577E;
+    grid-area: section2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.imgtol{
+    border-radius: 20%;
+    border-style:outset;
+    border-color: #FAFFAF;
+    border-width: 0.1cm;
+    height: 300px;
+    width: 400px;
+}
+
+.ttxt{
+    font-family: 'EB Garamond', serif;
+    color: #FAFFAF;
+    font-size: 30px;
+}
+
+footer{
+    background-color: #22577E;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    font-family: 'EB Garamond', serif;
+    color: #FAFFAF;
+    margin-bottom: 20px;
+}
+
+.f1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f2{
+    display: flex;
+    flex-direction: column;
+}
+.f2 a{
+    text-decoration: none;
+    color: #FAFFAF;
+}
+
+.contenedorcortinas{
+    display: grid;
+    height: 200vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 2fr 0.2fr;
+    grid-template-areas: "header1 header1"
+                         " main1 main1"
+                         "sectionc section1c"
+                         "footer1 footer1";
+    gap: 10px;                        
+}
+
+.headercortinas{
+    grid-area: header1;
+}
+.maincortinas{
+    grid-area: main1;
+    text-align: center;
+    padding: 30px;
+    color: #FAFFAF;
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+.sectionc{
+    grid-area: sectionc;
+    display: flex;
+    padding: 30px;
+}
+
+.c1{
+    border-radius: 10%;
+}
+.c2{
+    border-radius: 10%;
+}
+.c3{
+    border-radius: 10%;
+}
+.c4{
+    border-radius: 10%;
+}
+.c5{
+    border-radius: 10%;
+}
+.c6{
+    border-radius: 10%;
+}
+
+
+.card1{
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+    border-radius: 10%;
+    margin-bottom: 20px;
+    background-color: #67a29e;
+    color: #FAFFAF;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+.card2{
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+    border-radius: 10%;
+    margin-bottom: 20px;
+    background-color: #67a29e;
+    color: #FAFFAF;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+.card3{
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+    border-radius: 10%;
+    margin-bottom: 20px;
+    background-color: #67a29e;
+    color: #FAFFAF;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+.section1c{
+    grid-area: section1c;
+    display: flex;
+    padding: 30px;
+}
+.card4{
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+    border-radius: 10%;
+    margin-bottom: 20px;
+    background-color: #67a29e;
+    color: #FAFFAF;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+.card5{
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+    border-radius: 10%;
+    margin-bottom: 20px;
+    background-color: #67a29e;
+    color: #FAFFAF;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+.card6{
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+    border-radius: 10%;
+    margin-bottom: 20px;
+    background-color: #67a29e;
+    color: #FAFFAF;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
+
+.footercortinas{
+    grid-area: footer1;
+}
