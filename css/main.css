@@ -42,6 +42,7 @@ header h1{
 main{
     background-color: #22577E;
     grid-area: main;
+    justify-content: center;
 }
 
 .maintxt{
@@ -49,6 +50,28 @@ main{
     color: #FAFFAF;
     text-align: center;
     padding: 20px;
+}
+
+.luna img{
+    width: 30%;
+    margin-top: 60px;
+    margin-left: 400px;
+}
+
+.animation{
+    animation-name: noses;
+    animation-duration: 180s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes noses{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 aside{
