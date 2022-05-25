@@ -93,6 +93,32 @@ main{
     padding: 20px;
 }
 
+
+
+.h2-contact{
+    margin: 30px;
+    text-align: center;
+    color: #FAFFAF;
+    font-family:'EB Garamond', serif ;
+}
+
+.p-contact{
+    text-align: center;
+    color: #FAFFAF;
+    font-family:'EB Garamond', serif ;
+}
+
+.form-contact{
+    padding: 30px;
+    color: #FAFFAF;
+    font-family:'EB Garamond', serif ;
+}
+
+.h2-instructivos{
+    text-align: center;
+    margin: 50px;
+}
+
 aside{
     background-color: #22577E;
     grid-area: aside;
@@ -108,18 +134,47 @@ aside{
 }
 
 fieldset{
-    height: 500px;
+    height: 400px;
     border: none;
-    margin-top: 70px;
+    margin-top: 30px;
     font-size: large;
 }
 
 legend{
     font-size: xx-large;
 }
-.nombre{
-    margin: 50px;
+.i1{
+  margin: 20px;
 }
+.i11{
+    margin-left: 100px;
+  }
+
+.i2{
+    margin: 20px;
+}
+.i21{
+    margin-left: 138px;
+  }
+
+.i3{
+    margin: 20px;
+}
+.i31{
+    margin-left: 118px;
+}
+
+.i4{
+    margin: 20px;
+}
+.i41{
+    margin-left: 42px;
+}
+
+.boton{
+    margin-left: 275px;
+}
+
 .mail{
     margin: 50px;
 }
