@@ -6,6 +6,8 @@
     list-style-type: none;
 }
 
+/* Estilos del body */
+
 body{
     background-color: #22577E;
 }
@@ -19,7 +21,7 @@ body{
                          " main main aside"
                          "section section2 aside"
                          "footer footer footer ";
-    gap: 10px;                        
+    gap: 10px;                       
 }
 header{
     grid-area: header;
@@ -39,10 +41,49 @@ header h1{
     align-self: center;
 }
 
+nav{
+    font-family: 'EB Garamond', serif;
+    color: #FAFFAF;
+}
+
+.nav-background{
+    background-color: #67a29e;
+}
+
+.dropdown-menu{
+    background-color: #67a29e;
+}
+
 main{
     background-color: #22577E;
     grid-area: main;
-    justify-content: center;
+    color: #FAFFAF;
+}
+
+.main-toldos{
+    margin-bottom: 70px;
+}
+
+.th2{
+    font-family: 'EB Garamond', serif;
+    color: #FAFFAF;
+    margin: 50px;
+}
+
+.t1{
+    font-family: 'EB Garamond', serif;
+}
+
+.t2{
+    font-family: 'EB Garamond', serif;
+}
+
+.t3{
+    font-family: 'EB Garamond', serif;
+}
+
+.t4{
+    font-family: 'EB Garamond', serif;
 }
 
 .maintxt{
@@ -50,28 +91,6 @@ main{
     color: #FAFFAF;
     text-align: center;
     padding: 20px;
-}
-
-.luna img{
-    width: 30%;
-    margin-top: 60px;
-    margin-left: 400px;
-}
-
-.animation{
-    animation-name: noses;
-    animation-duration: 180s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes noses{
-    from{
-        transform: rotate(0);
-    }
-    to{
-        transform: rotate(360deg);
-    }
 }
 
 aside{
@@ -124,45 +143,6 @@ form button {
   }
 legend{
     text-align: center;
-}
-
-nav{
-    text-align: center;
-    padding: 10px;
-    font-family: 'EB Garamond', serif;
-    position: sticky;
-    top: 0;
-    background-color: #67a29e;
-}
-
-nav ul li {
-    color: #FAFFAF;
-    font-size: large;
-    display: inline-block;
-    margin-left: 40px;
-    position: relative;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: #FAFFAF;
-}
-
-nav ul li:hover{
-    font-weight: bold;
-}
-
-nav ul ul {
-    display: none;
-    position: absolute;
-    background-color: #67a29e;
-    padding: 5px;
-    margin-bottom: 10px;
-    font-weight: lighter;
-}
-
-nav ul li:hover > ul{
-    display: block;
 }
 
 section{
